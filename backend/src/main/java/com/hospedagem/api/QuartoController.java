@@ -54,6 +54,8 @@ public class QuartoController {
                 return quartoService.criarDuplo(residenciaId, (QuartoDuplo) payload);
             case FAMILIA:
                 return quartoService.criarFamilia(residenciaId, (QuartoFamilia) payload);
+            default:
+                throw new IllegalArgumentException("Tipo de quarto inválido: " + payload.getTipoQuarto());
         }
     }
 

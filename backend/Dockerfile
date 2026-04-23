@@ -1,5 +1,5 @@
-# our base build image
-FROM maven:3.6.0-jdk-8 as maven
+# our base build image (eclipse-temurin replaces removed docker.io/library/openjdk / old maven jdk images)
+FROM maven:3.9-eclipse-temurin-8 AS maven
 
 # copy the project files
 COPY ./pom.xml ./pom.xml
@@ -14,7 +14,7 @@ COPY ./src ./src
 RUN mvn package -DskipTests
 
 # our final base image
-FROM openjdk:8-jre-alpine
+FROM eclipse-temurin:8-jre-alpine
 
 # set deployment directory
 WORKDIR /my-project

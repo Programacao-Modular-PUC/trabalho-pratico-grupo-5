@@ -1,0 +1,30 @@
+version: '3.5'
+services:
+  mysql:
+    image: mysql:8.0
+    restart: always
+    container_name: mysql-hospedagem
+    volumes:
+      - "./db:/var/lib/mysql"
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=hospedagem
+      - MYSQL_USER=hospedagem-user
+      - MYSQL_PASSWORD=changeit
+  web:
+    build: .
+    container_name: hospedagem-api
+    restart: on-failure
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_PORT=3306
+      - DB_NAME=hospedagem
+      - DB_HOST=mysql
+      - MYSQL_USER=hospedagem-user
+      - MYSQL_USER_PASSWORD=changeit
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - mysql

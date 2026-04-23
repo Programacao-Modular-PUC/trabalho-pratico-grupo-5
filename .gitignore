@@ -1,0 +1,43 @@
+# Maven
+target/
+
+# Gradle (if used)
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.factorypath
+.apt_generated
+.sts4-cache
+.springBeans
+
+# VS Code (local user settings)
+.vscode/
+
+# Java / JVM
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# Docker MySQL data volume (backend/docker-compose)
+backend/db/
+
+# Optional: Maven Wrapper jar is committed when using wrapper
+!.mvn/wrapper/maven-wrapper.jar

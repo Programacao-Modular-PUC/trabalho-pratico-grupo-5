@@ -102,3 +102,16 @@ Na primeira execução com banco **sem residências**, a API pode inserir client
 
 - **Erro ao criar beans JPA / `JdbcEnvironment`:** em geral o MySQL não está acessível (serviço parado, host/porta errados, banco inexistente ou credenciais incorretas). Confira a primeira causa raiz (`Caused by`) no log, costuma ser `CommunicationsException` ou `SQLException`.
 - **Build com Lombok em JDK recente:** o `pom.xml` do backend define uma versão de Lombok compatível com JDKs modernos.
+<<<<<<< HEAD
+=======
+
+## Como executar o projeto
+
+1. Instale o MySQL
+2. Crie o banco:
+   CREATE DATABASE hospedagem;
+3. Configure usuário e senha em:
+   backend/src/main/resources/application.properties
+4. Execute:
+   mvn spring-boot:run
+>>>>>>> Implementação das funcionalidades iniciais do sistema de hospedagem

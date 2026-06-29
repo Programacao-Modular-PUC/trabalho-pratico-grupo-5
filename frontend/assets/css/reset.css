@@ -1,0 +1,46 @@
+/* RESET CSS - SMARTSTAY */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+}
+
+img,
+picture{
+    max-width:100%;
+    display:block;
+}
+
+input,
+button,
+textarea,
+select{
+    font:inherit;
+    outline:none;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}

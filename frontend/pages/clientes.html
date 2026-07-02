@@ -146,17 +146,23 @@
 
                         <td>joao@email.com</td>
 
-                        <td>
+                        <td class="actions-buttons">
 
-                            <button class="action edit">
+                            <button class="action view" title="Visualizar">
 
-                                <i class="fas fa-pen"></i>
+                             <i class="fas fa-eye"></i>
 
                             </button>
 
-                            <button class="action delete">
+                            <button class="action edit" title="Editar">
 
-                                <i class="fas fa-trash"></i>
+                             <i class="fas fa-pen"></i>
+
+                             </button>
+
+                            <button class="action delete" title="Excluir">
+
+                             <i class="fas fa-trash"></i>
 
                             </button>
 
@@ -174,17 +180,23 @@
 
                         <td>maria@email.com</td>
 
-                        <td>
+                        <td class="actions-buttons">
 
-                            <button class="action edit">
+                            <button class="action view" title="Visualizar">
 
-                                <i class="fas fa-pen"></i>
+                             <i class="fas fa-eye"></i>
 
                             </button>
 
-                            <button class="action delete">
+                            <button class="action edit" title="Editar">
 
-                                <i class="fas fa-trash"></i>
+                             <i class="fas fa-pen"></i>
+
+                             </button>
+
+                            <button class="action delete" title="Excluir">
+
+                             <i class="fas fa-trash"></i>
 
                             </button>
 
@@ -202,17 +214,23 @@
 
                         <td>carlos@email.com</td>
 
-                        <td>
+                        <td class="actions-buttons">
 
-                            <button class="action edit">
+                            <button class="action view" title="Visualizar">
 
-                                <i class="fas fa-pen"></i>
+                             <i class="fas fa-eye"></i>
 
                             </button>
 
-                            <button class="action delete">
+                            <button class="action edit" title="Editar">
 
-                                <i class="fas fa-trash"></i>
+                             <i class="fas fa-pen"></i>
+
+                             </button>
+
+                            <button class="action delete" title="Excluir">
+
+                             <i class="fas fa-trash"></i>
 
                             </button>
 
@@ -238,7 +256,7 @@
 
         <div class="modal-header">
 
-            <h2>Novo Cliente</h2>
+           <h2 id="modalTitle">Novo Cliente</h2>
 
             <button class="close">&times;</button>
 
@@ -250,7 +268,7 @@
 
                 <label>Nome</label>
 
-                <input type="text">
+                <input id="nome" type="text">
 
             </div>
 
@@ -258,7 +276,7 @@
 
                 <label>CPF</label>
 
-                <input type="text">
+                <input id="cpf" type="text">
 
             </div>
 
@@ -266,7 +284,7 @@
 
                 <label>Telefone</label>
 
-                <input type="text">
+                <input id="telefone" type="text">>
 
             </div>
 
@@ -274,7 +292,7 @@
 
                 <label>Email</label>
 
-                <input type="email">
+                <input id="email" type="email">
 
             </div>
 
@@ -286,7 +304,7 @@
 
                 </button>
 
-                <button type="submit" class="btn-primary">
+                <button id="saveBtn" type="submit" class="btn-primary">
 
                     Salvar Cliente
 

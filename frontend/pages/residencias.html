@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Residências | SmartStay</title>
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4e5f4d7b9d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    🏨
+                </div>
+
+                <div>
+
+                    <h2>SmartStay</h2>
+
+                    <span>Hotel Management</span>
+
+                </div>
+
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+
+                    <i class="fas fa-chart-line"></i>
+
+                    Dashboard
+
+                </a>
+
+                <a href="clientes.html">
+
+                    <i class="fas fa-users"></i>
+
+                    Clientes
+
+                </a>
+
+                <a class="active" href="#">
+
+                    <i class="fas fa-building"></i>
+
+                    Residências
+
+                </a>
+
+                <a href="quartos.html">
+
+                    <i class="fas fa-bed"></i>
+
+                    Quartos
+
+                </a>
+
+                <a href="reservas.html">
+
+                    <i class="fas fa-calendar-check"></i>
+
+                    Reservas
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Residências</h1>
+
+                <p>Gerencie todas as residências cadastradas.</p>
+
+            </div>
+
+            <div class="user">
+
+                <i class="fas fa-bell"></i>
+
+                <div class="avatar">H</div>
+
+            </div>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <i class="fas fa-building"></i>
+
+                <h3>Residências</h3>
+
+                <h2>12</h2>
+
+                <span>Cadastradas</span>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-home"></i>
+
+                <h3>Disponíveis</h3>
+
+                <h2>10</h2>
+
+                <span>Em operação</span>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-bed"></i>
+
+                <h3>Total de Quartos</h3>
+
+                <h2>145</h2>
+
+                <span>Registrados</span>
+
+            </div>
+
+        </section>
+
+        <section class="table-area">
+
+            <div class="table-header">
+
+                <div>
+
+                    <h2>Lista de Residências</h2>
+
+                    <p>Gerencie as residências cadastradas.</p>
+
+                </div>
+
+                <div class="actions">
+
+                    <button id="openModal" class="btn-primary">
+
+                    <i class="fas fa-plus"></i>
+
+                    Nova Residência
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Nome</th>
+
+                        <th>Endereço</th>
+
+                        <th>Cidade</th>
+
+                        <th>Capacidade</th>
+
+                        <th>Ações</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Residencial Central</td>
+
+                        <td>Rua das Flores, 120</td>
+
+                        <td>Belo Horizonte</td>
+
+                        <td>20 Quartos</td>
+
+                         <td class="actions-buttons">
+
+                            <button class="action view" title="Visualizar">
+
+                             <i class="fas fa-eye"></i>
+
+                            </button>
+
+                            <button class="action edit" title="Editar">
+
+                             <i class="fas fa-pen"></i>
+
+                             </button>
+
+                            <button class="action delete" title="Excluir">
+
+                             <i class="fas fa-trash"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Residencial Sol</td>
+
+                        <td>Av. Brasil, 550</td>
+
+                        <td>Contagem</td>
+
+                        <td>12 Quartos</td>
+
+                        <td class="actions-buttons">
+
+                            <button class="action view" title="Visualizar">
+
+                             <i class="fas fa-eye"></i>
+
+                            </button>
+
+                            <button class="action edit" title="Editar">
+
+                             <i class="fas fa-pen"></i>
+
+                             </button>
+
+                            <button class="action delete" title="Excluir">
+
+                             <i class="fas fa-trash"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Residencial Horizonte</td>
+
+                        <td>Rua Minas Gerais, 89</td>
+
+                        <td>Betim</td>
+
+                        <td>18 Quartos</td>
+
+                         <td class="actions-buttons">
+
+                            <button class="action view" title="Visualizar">
+
+                             <i class="fas fa-eye"></i>
+
+                            </button>
+
+                            <button class="action edit" title="Editar">
+
+                             <i class="fas fa-pen"></i>
+
+                             </button>
+
+                            <button class="action delete" title="Excluir">
+
+                             <i class="fas fa-trash"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- Modal -->
+
+<div class="modal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2 id="modalTitle">Nova Residência</h2>
+
+            <button class="close">&times;</button>
+
+        </div>
+
+        <form>
+
+            <div class="input-group">
+
+                <label>Nome</label>
+
+                <input id="nomeResidencia" type="text">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Endereço</label>
+
+                <input id="endereco" type="text">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Cidade</label>
+
+                <input id="cidade" type="text">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Capacidade</label>
+
+                <input id="capacidade" type="number">
+
+            </div>
+
+            <div class="modal-buttons">
+
+                <button type="button" class="btn-cancel">
+
+                    Cancelar
+
+                </button>
+
+                <button id="saveBtn" type="submit" class="btn-primary">
+
+                    Salvar Residência
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="../assets/js/residencias.js"></script>
+
+</body>
+
+</html>

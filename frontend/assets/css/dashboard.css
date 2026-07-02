@@ -754,3 +754,91 @@ font-weight:600;
 background:#D1D5DB;
 
 }
+
+/* ================= AÇÕES ================= */
+
+.actions-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.action{
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.view{
+
+    background:#E0F2FE;
+
+    color:#0369A1;
+
+}
+
+.view:hover{
+
+    background:#0284C7;
+
+    color:white;
+
+}
+
+.edit{
+
+    background:#DBEAFE;
+
+    color:#1D4ED8;
+
+}
+
+.edit:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+.delete{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+}
+
+.delete:hover{
+
+    background:#DC2626;
+
+    color:white;
+
+}
+
+.delete:hover{
+
+    background:#DC2626;
+
+    color:white;
+
+    transform:scale(1.08);
+
+}

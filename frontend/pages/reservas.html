@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reservas | SmartStay</title>
+
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/variables.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4e5f4d7b9d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<aside class="sidebar">
+
+<div>
+
+<div class="logo">
+
+<div class="logo-icon">🏨</div>
+
+<div>
+
+<h2>SmartStay</h2>
+
+<span>Hotel Management</span>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="dashboard.html">
+
+<i class="fas fa-chart-line"></i>
+
+Dashboard
+
+</a>
+
+<a href="clientes.html">
+
+<i class="fas fa-users"></i>
+
+Clientes
+
+</a>
+
+<a href="residencias.html">
+
+<i class="fas fa-building"></i>
+
+Residências
+
+</a>
+
+<a href="quartos.html">
+
+<i class="fas fa-bed"></i>
+
+Quartos
+
+</a>
+
+<a class="active" href="#">
+
+<i class="fas fa-calendar-check"></i>
+
+Reservas
+
+</a>
+
+</nav>
+
+</div>
+
+</aside>
+
+<main class="content">
+
+<header class="topbar">
+
+<div>
+
+<h1>Reservas</h1>
+
+<p>Gerencie todas as reservas.</p>
+
+</div>
+
+<div class="user">
+
+<i class="fas fa-bell"></i>
+
+<div class="avatar">H</div>
+
+</div>
+
+</header>
+
+<section class="cards">
+
+<div class="card">
+
+<i class="fas fa-calendar-check"></i>
+
+<h3>Reservas</h3>
+
+<h2>52</h2>
+
+<span>Ativas</span>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-clock"></i>
+
+<h3>Check-in Hoje</h3>
+
+<h2>8</h2>
+
+<span>Previstos</span>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-door-open"></i>
+
+<h3>Check-out Hoje</h3>
+
+<h2>5</h2>
+
+<span>Previstos</span>
+
+</div>
+
+</section>
+
+<section class="table-area">
+
+<div class="table-header">
+
+<div>
+
+<h2>Lista de Reservas</h2>
+
+<p>Controle das reservas cadastradas.</p>
+
+</div>
+
+<button id="openModal" class="btn-primary">
+
+<i class="fas fa-plus"></i>
+
+Nova Reserva
+
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Cliente</th>
+
+<th>Quarto</th>
+
+<th>Entrada</th>
+
+<th>Saída</th>
+
+<th>Status</th>
+
+<th>Ações</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>João Silva</td>
+
+<td>101</td>
+
+<td>01/07/2026</td>
+
+<td>05/07/2026</td>
+
+<td><span class="success badge">Ativa</span></td>
+
+<td class="actions-buttons">
+
+<button class="action view"><i class="fas fa-eye"></i></button>
+
+<button class="action edit"><i class="fas fa-pen"></i></button>
+
+<button class="action delete"><i class="fas fa-trash"></i></button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Maria Souza</td>
+
+<td>205</td>
+
+<td>10/07/2026</td>
+
+<td>15/07/2026</td>
+
+<td><span class="warning badge">Pendente</span></td>
+
+<td class="actions-buttons">
+
+<button class="action view"><i class="fas fa-eye"></i></button>
+
+<button class="action edit"><i class="fas fa-pen"></i></button>
+
+<button class="action delete"><i class="fas fa-trash"></i></button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<div class="modal">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h2 id="modalTitle">Nova Reserva</h2>
+
+<button class="close">&times;</button>
+
+</div>
+
+<form>
+
+<div class="input-group">
+
+<label>Cliente</label>
+
+<input id="cliente" type="text">
+
+</div>
+
+<div class="input-group">
+
+<label>Quarto</label>
+
+<input id="quarto" type="text">
+
+</div>
+
+<div class="input-group">
+
+<label>Data Entrada</label>
+
+<input id="entrada" type="date">
+
+</div>
+
+<div class="input-group">
+
+<label>Data Saída</label>
+
+<input id="saida" type="date">
+
+</div>
+
+<div class="modal-buttons">
+
+<button type="button" class="btn-cancel">
+
+Cancelar
+
+</button>
+
+<button id="saveBtn" type="submit" class="btn-primary">
+
+Salvar Reserva
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="../assets/js/reservas.js"></script>
+
+</body>
+
+</html>

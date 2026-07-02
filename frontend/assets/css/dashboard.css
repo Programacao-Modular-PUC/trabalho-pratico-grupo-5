@@ -761,35 +761,41 @@ background:#D1D5DB;
 
     display:flex;
 
-    gap:10px;
-
-    flex-wrap:wrap;
+    gap:8px;
 
 }
 
 .action{
 
+    width:38px;
+
+    height:38px;
+
     border:none;
 
-    padding:8px 14px;
-
-    border-radius:8px;
+    border-radius:10px;
 
     cursor:pointer;
 
-    font-size:13px;
-
-    font-weight:600;
-
     transition:.25s;
 
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:15px;
+
 }
+
+/* Visualizar */
 
 .view{
 
     background:#E0F2FE;
 
-    color:#0369A1;
+    color:#0284C7;
 
 }
 
@@ -799,13 +805,17 @@ background:#D1D5DB;
 
     color:white;
 
+    transform:scale(1.08);
+
 }
+
+/* Editar */
 
 .edit{
 
     background:#DBEAFE;
 
-    color:#1D4ED8;
+    color:#2563EB;
 
 }
 
@@ -815,7 +825,11 @@ background:#D1D5DB;
 
     color:white;
 
+    transform:scale(1.08);
+
 }
+
+/* Excluir */
 
 .delete{
 
@@ -831,14 +845,28 @@ background:#D1D5DB;
 
     color:white;
 
+    transform:scale(1.08);
+
 }
 
-.delete:hover{
+.input-group select{
 
-    background:#DC2626;
+    padding:12px 15px;
 
-    color:white;
+    border:1px solid #ddd;
 
-    transform:scale(1.08);
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+    background:white;
+
+}
+
+.input-group select:focus{
+
+    border-color:var(--primary);
 
 }

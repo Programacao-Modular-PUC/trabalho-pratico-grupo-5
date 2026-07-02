@@ -1,0 +1,123 @@
+const modal = document.querySelector(".modal");
+
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.querySelector(".close");
+const cancelBtn = document.querySelector(".btn-cancel");
+
+const modalTitle = document.getElementById("modalTitle");
+const saveBtn = document.getElementById("saveBtn");
+
+const cliente = document.getElementById("cliente");
+const quarto = document.getElementById("quarto");
+const entrada = document.getElementById("entrada");
+const saida = document.getElementById("saida");
+
+function abrirModal() {
+    modal.classList.add("active");
+}
+
+function fecharModal() {
+    modal.classList.remove("active");
+}
+
+function limparFormulario() {
+    cliente.value = "";
+    quarto.value = "";
+    entrada.value = "";
+    saida.value = "";
+}
+
+function somenteLeitura(valor) {
+    cliente.readOnly = valor;
+    quarto.readOnly = valor;
+    entrada.readOnly = valor;
+    saida.readOnly = valor;
+}
+
+openBtn.onclick = () => {
+
+    modalTitle.innerText = "Nova Reserva";
+
+    limparFormulario();
+
+    somenteLeitura(false);
+
+    saveBtn.style.display = "inline-block";
+
+    abrirModal();
+
+};
+
+closeBtn.onclick = fecharModal;
+
+cancelBtn.onclick = fecharModal;
+
+window.onclick = (e) => {
+
+    if (e.target === modal) {
+
+        fecharModal();
+
+    }
+
+};
+
+document.querySelectorAll(".view").forEach(btn => {
+
+    btn.onclick = function () {
+
+        const dados = this.closest("tr").querySelectorAll("td");
+
+        modalTitle.innerText = "Visualizar Reserva";
+
+        cliente.value = dados[0].innerText;
+        quarto.value = dados[1].innerText;
+        entrada.value = "";
+        saida.value = "";
+
+        somenteLeitura(true);
+
+        saveBtn.style.display = "none";
+
+        abrirModal();
+
+    };
+
+});
+
+document.querySelectorAll(".edit").forEach(btn => {
+
+    btn.onclick = function () {
+
+        const dados = this.closest("tr").querySelectorAll("td");
+
+        modalTitle.innerText = "Editar Reserva";
+
+        cliente.value = dados[0].innerText;
+        quarto.value = dados[1].innerText;
+        entrada.value = "";
+        saida.value = "";
+
+        somenteLeitura(false);
+
+        saveBtn.style.display = "inline-block";
+
+        abrirModal();
+
+    };
+
+});
+
+document.querySelectorAll(".delete").forEach(btn => {
+
+    btn.onclick = function () {
+
+        if (confirm("Deseja excluir esta reserva?")) {
+
+            this.closest("tr").remove();
+
+        }
+
+    };
+
+});

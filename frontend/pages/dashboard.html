@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | SmartStay</title>
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4e5f4d7b9d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                🏨
+            </div>
+
+            <div>
+
+                <h2>SmartStay</h2>
+
+                <span>Hotel Management</span>
+
+            </div>
+
+        </div>
+
+        <nav>
+
+            <a class="active" href="dashboard.html">
+                <i class="fas fa-chart-line"></i>
+                Dashboard
+            </a>
+
+            <a href="clientes.html">
+                <i class="fas fa-users"></i>
+                Clientes
+            </a>
+
+            <a href="residencias.html">
+                <i class="fas fa-building"></i>
+                Residências
+            </a>
+
+            <a href="quartos.html">
+                <i class="fas fa-bed"></i>
+                Quartos
+            </a>
+
+            <a href="reservas.html">
+                <i class="fas fa-calendar-check"></i>
+                Reservas
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Dashboard</h1>
+
+                <p>Bem-vindo ao SmartStay 👋</p>
+
+            </div>
+
+            <div class="user">
+
+              <i class="fas fa-bell"></i>
+
+              <div class="avatar">
+                  H
+              </div>   
+
+            </div>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <i class="fas fa-users"></i>
+
+                <h3>Clientes</h3>
+
+                <h2>152</h2>
+
+                <span>+12 este mês</span>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-bed"></i>
+
+                <h3>Quartos</h3>
+
+                <h2>34</h2>
+
+                <span>Disponíveis</span>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-calendar-check"></i>
+
+                <h3>Reservas</h3>
+
+                <h2>81</h2>
+
+                <span>Ativas</span>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-dollar-sign"></i>
+
+                <h3>Receita</h3>
+
+                <h2>R$ 18.450</h2>
+
+                <span>Mês Atual</span>
+
+            </div>
+
+        </section>
+
+        <section class="table-area">
+
+            <div class="table-header">
+
+                <h2>Últimas Reservas</h2>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Cliente</th>
+
+                        <th>Quarto</th>
+
+                        <th>Entrada</th>
+
+                        <th>Saída</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>João Silva</td>
+
+                        <td>101</td>
+
+                        <td>29/06</td>
+
+                        <td>02/07</td>
+
+                        <td><span class="badge success">Confirmada</span></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Maria Souza</td>
+
+                        <td>205</td>
+
+                        <td>28/06</td>
+
+                        <td>30/06</td>
+
+                        <td><span class="badge warning">Em andamento</span></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Carlos Lima</td>
+
+                        <td>310</td>
+
+                        <td>01/07</td>
+
+                        <td>05/07</td>
+
+                        <td><span class="badge success">Confirmada</span></td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>
